@@ -1,2 +1,3 @@
 # TodoList
-a simple todolist
+A simple todolist
+
