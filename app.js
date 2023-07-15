@@ -28,8 +28,6 @@ app.get("/", function (req, res) {
   Item.find({}, function (err, found) {
       res.render("list", { today: today, items: found });
   });
-
-  //   res.send("adasdasd");
 });
 app.post("/", function (req, res) {
   var task = req.body.task;
@@ -53,10 +51,8 @@ app.post("/delete",function(req,res){
     }
 
   });
-
-
 });
-
-app.listen(2000, function () {
+const port=process.env.PORT||2000;
+app.listen(port, function () {
   console.log("server is running");
 });
