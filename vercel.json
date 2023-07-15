@@ -2,9 +2,9 @@
     "version": 2,
     "name": "to-do-list",
     "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
+       { "src": "./views/list.ejs", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
+       { "src": "/(.*)", "dest": "./views/list.ejs" }
     ]
  }
